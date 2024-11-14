@@ -1,0 +1,28 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(240, 248, 255);
+    background-color: rgb(32, 32, 32);
+}
+  
+a:hover {
+    color: lightgreen;
+} 
+
+hr {
+    border-bottom: none;
+    border-top: 1pt dashed;
+}
+
+#outer-container {
+    display: flex;
+    justify-content: center;
+}
+
+#inner-container {
+    width: 50%;
+}
+
+.spaced-between {
+    display: flex;
+    justify-content: space-between;
+}
