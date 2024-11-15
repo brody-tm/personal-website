@@ -3,9 +3,23 @@
     color: rgb(240, 248, 255);
     background-color: rgb(32, 32, 32);
 }
+
+img {
+    width: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
   
+a {
+    text-decoration: dotted;
+}
+
 a:hover {
     color: lightgreen;
+    text-decoration: underline;
 } 
 
 hr {
@@ -25,4 +39,9 @@ hr {
 .spaced-between {
     display: flex;
     justify-content: space-between;
+}
+
+.letter:hover {
+    color: lightgreen;
+    cursor: default;
 }
