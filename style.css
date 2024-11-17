@@ -1,8 +1,8 @@
-* {
+body {
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(240, 248, 255);
-    background-color: rgb(32, 32, 32);
-    font-size: 14pt;
+    color: rgb(32, 32, 32);
+    background-color: rgb(240, 248, 255);
+    font-size: 15pt;
 }
 
 h1 {
@@ -20,7 +20,12 @@ h3 {
 }
 
 img {
-    width: 100%;
+    width: 80%;
+}
+
+.svg {
+    height: 16pt;
+    width: 16pt;
 }
   
 a {
@@ -30,13 +35,12 @@ a {
 }
 
 a:hover {
-    color: lightgreen;
-    text-decoration: underline;
+    color: green;
 } 
 
 hr {
     border: none;
-    border-top: 1pt dashed;
+    border-top: 2pt dotted;
 }
 
 #outer-container {
@@ -46,12 +50,17 @@ hr {
 
 #inner-container {
     width: 600pt;
-    max-width: 95%;
+    max-width: 90%;
 }
 
 .spaced-between {
     display: flex;
     justify-content: space-between;
+}
+
+.spaced-evenly {
+    display: flex;
+    justify-content: center;
 }
 
 .letter {
@@ -60,6 +69,66 @@ hr {
 }
 
 .letter:hover {
-    color: lightgreen;
+    color: darkgreen;
     cursor: default;
+}
+
+.inline-link {
+    text-decoration: underline;
+}
+
+.inline-link:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Styling */
+
+.dark-mode {
+    color: rgb(240, 248, 255);
+    background-color: rgb(32, 32, 32);
+}
+
+.dark-mode a:hover {
+    color: lightgreen;
+}
+
+.dark-mode .dark-mode-button {
+    -webkit-filter:invert(1);
+    filter:invert(1);
+}
+
+/* Toggle Dark Mode Button */
+
+.dark-mode-button {
+    padding: 0pt;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    vertical-align: middle;
+    -webkit-filter: none; /* Reset filter */
+    filter: none;
+}
+
+.dark-mode-button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#ascii-pc {
+    font-size: 14pt;
+    display: flex;
+    justify-content: center;
+}
+
+#about-container {
+    display: flex;
+}
+
+@media all and (max-width:800px)
+{
+    #about-container {
+        flex-direction: column;
+    }
 }

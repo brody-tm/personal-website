@@ -6,6 +6,7 @@
     <title>Projects | brody-t.xyz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="main.js"></script>
 </head>
 <body>
     <div id="outer-container">
@@ -18,7 +19,9 @@
                 </span>
                 <span>
                     <a href="https://github.com/brody-tm" target="_blank">github</a>
-
+                    <button class="dark-mode-button" onclick="toggleDarkMode()">
+                        <img class="svg" src="assets/dark-mode-svgrepo-com.svg" alt="Dark mode icon">
+                    </button>
                 </span> 
             </nav>
 
@@ -26,14 +29,14 @@
 
             <hr>
 
-            <h2>Daily Doodles</h2>
+            <h2 id="daily-doodles-header">Daily Doodles</h2>
 
             <p>
                 A drawing-based social media apps where you draw pictures for your friends. See who has the hottest drawings of the day.
             </p>
 
             <p>
-                This app is a full stack app made by a team of students for learning purposes. Features include a responsive front end,
+                Full stack app made by a team of students for learning purposes. Features include a responsive front end,
                 drawing suite with various brushes and tools, user accounts with profile customization, explore page to view and interact with
                 other users' drawings, and a leaderboard page showcasing the top posts of the day.
             </p>
@@ -44,10 +47,34 @@
             </p>
 
             <h3>Explore Page</h3>
-            <img src="assets/pic-explore.png" alt="picture of explore page">
+            <div class="spaced-evenly">
+                <img src="assets/pic-explore.png" alt="picture of explore page">
+            </div>
 
             <h3>Leaderboard Page</h3>
-            <img src="assets/pic-leaderboard.png" alt="picture of leaderboard page">
+            <div class="spaced-evenly">
+                <img src="assets/pic-leaderboard.png" alt="picture of leaderboard page">
+            </div>
+
+            <hr>
+
+            <h2 id="blackjack-header">Javascript Blackjack</h2>
+
+            <p>
+                Browser based implementation of Blackjack. That's pretty much it.
+            </p>
+
+            <p>
+                Made with HTML, CSS, and Javascript to brush up on my Javascript and for fun. I utilized the
+                <a class="inline-link" href="https://deckofcardsapi.com/" target="_blank">
+                    Deck of Cards API
+                </a>
+                to create and manipulate the deck.
+            </p>
+
+            <div class="spaced-evenly">
+                <img src="assets/loss.png" alt="">
+            </div>
         </div>
     </div> 
 </body>

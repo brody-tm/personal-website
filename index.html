@@ -6,6 +6,7 @@
     <title>Home | brody-t.xyz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="main.js"></script>
 </head>
 <body>
     <div id="outer-container">
@@ -18,41 +19,22 @@
                 </span>
                 <span>
                     <a href="https://github.com/brody-tm" target="_blank">github</a>
-
+                    <button class="dark-mode-button" onclick="toggleDarkMode()">
+                        <img class="svg" src="assets/dark-mode-svgrepo-com.svg" alt="Dark mode icon">
+                    </button>
                 </span> 
             </nav>
 
-            <h1 id="funny-heeader">
-                <span class="letter">b</span>
-                <span class="letter">r</span>
-                <span class="letter">o</span>
-                <span class="letter">d</span>
-                <span class="letter">y</span>
-                <span class="letter">-</span>
-                <span class="letter">t</span>
-                <span class="letter">.</span>
-                <span class="letter">x</span>
-                <span class="letter">y</span>
-                <span class="letter">z</span>
-            </h1>
-
-            <hr>
-
-            <h2><a href="about.html">About</a></h2>
-            <p>
-                I intend to use this site as a means of self expression as well as for talking about hobbies and personal projects. 
-                I also want to get into writing blog posts about various things. I enjoy simple software, Linux, open source, and most things
-                computer related.
-            </p>
+            <h1>brody-t.xyz</h1>
 
             <hr>
 
             <h2><a href="projects.html">Projects</a></h2>
-            <h3>Daily Doodles</h3>
+            <h3><a href="projects.html#daily-doodles-header">Daily Doodles</a></h3>
             <ul>
-                <p>Full stack drawing-based social media web app.</p>
+                <p>Draw pictures for your friends.</p>
             </ul>
-            <h3>Javascript Blackjack</h3>
+            <h3><a href="projects.html#blackjack-header">Javascript Blackjack</a></h3>
             <ul>
                 <p>Play blackjack against a dumb computer opponent.</p>
             </ul>
@@ -61,7 +43,7 @@
 
             <h2>Education</h2>
             <p class="spaced-between">
-                <span>West Virginia University</span>
+                <span><strong>West Virginia University</strong></span>
                 <span>Expected: May 2026</span>
             </p>
             <p class="spaced-between">

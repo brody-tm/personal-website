@@ -6,6 +6,7 @@
     <title>About | brody-t.xyz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="main.js"></script>
 </head>
 <body>
     <div id="outer-container">
@@ -18,7 +19,9 @@
                 </span>
                 <span>
                     <a href="https://github.com/brody-tm" target="_blank">github</a>
-
+                    <button class="dark-mode-button" onclick="toggleDarkMode()">
+                        <img class="svg" src="assets/dark-mode-svgrepo-com.svg" alt="Dark mode icon">
+                    </button>
                 </span> 
             </nav>
 
@@ -26,12 +29,39 @@
 
             <hr>
 
-            <p>
-                I intend to use this site as a means of self expression as well as for talking about hobbies and personal projects. 
-                I also want to get into writing blog posts about various things. I enjoy simple software, Linux, open source, and most things
-                computer related.
-            </p>
+            <div id="about-container">
+                <div id="about-container-l1">
+                    <p>
+                        <br>
+                        I hope to use this site as a means of self expression as well as for talking about hobbies and personal projects. 
+                        I also want to get into writing blog posts about various things. I enjoy simple software, Linux, open source, and most things
+                        computer related.
+                    </p>
+                </div>
 
+                <div id="about-container-r1">
+                    <pre id="ascii-pc">
+                        _______
+                        | ___  o|
+                        |[_-_]_ |
+    ______________     |[_____]|
+    |.------------.|    |[_____]|
+    ||            ||    |[====o]|
+    ||            ||    |[_.--_]|
+    ||            ||    |[_____]|
+    ||            ||    |      :|
+    ||____________||    |      :|
+.==.|""  ......    |.==.|      :|
+|::| '-.________.-' |::||      :|
+|''|  (__________)-.|''||______:|
+`""`_.............._\""`______
+    /:::::::::::'':::\`;'-.-.  `\
+/::=========.:.-::"\ \ \--\   \
+\`""""""""""""""""`/  \ \__)   \
+    `""""""""""""""""`    '========'
+                    </pre>
+                </div>
+            </div>
         </div>
     </div> 
 </body>
