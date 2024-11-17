@@ -128,6 +128,10 @@ hr {
 
 @media all and (max-width:800px)
 {
+    #ascii-pc {
+        font-size: 12pt;
+    }
+
     #about-container {
         flex-direction: column;
     }
