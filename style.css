@@ -1,31 +1,6 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(32, 32, 32);
-    background-color: rgb(240, 248, 255);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
-}
-
-#outer-container {
-    display: flex;
-    justify-content: center;
-}
-
-#inner-container {
-    width: 650pt;
-    max-width: 90%;
-}
-
-#content-section {
-    display: flex;
-}
-
-#left-section {
-    width: 70%;
-    margin-right: 15pt;
-}
-
-#right-section {
-    width: 30%;
 }
 
 h1 {
@@ -43,7 +18,7 @@ h3 {
 }
 
 img {
-    width: 80%;
+    width: 90%;
 }
 
 .svg {
@@ -54,17 +29,36 @@ img {
 a {
     font-size: inherit;
     color: inherit;
-    text-decoration: none;
-    transition: 0.2s;
+    text-decoration: underline;
 }
-
-a:hover {
-    color: green;
-} 
 
 hr {
     border: none;
-    border-top: 2pt dotted;
+    border-top: 1pt solid;
+}
+
+#outer-container {
+    display: flex;
+    justify-content: center;
+}
+
+#inner-container {
+    padding-bottom: 20pt;
+    width: 600pt;
+    max-width: 90%;
+}
+
+#content-section {
+    display: flex;
+}
+
+#left-section {
+    width: 70%;
+    margin-right: 15pt;
+}
+
+#right-section {
+    width: 30%;
 }
 
 .spaced-between {
@@ -77,22 +71,11 @@ hr {
     justify-content: center;
 }
 
-.letter {
-    font-size: inherit;
-    color: inherit;
-}
+/* Light Mode Styling */
 
-.letter:hover {
-    color: darkgreen;
-    cursor: default;
-}
-
-.inline-link {
-    text-decoration: underline;
-}
-
-.inline-link:hover {
-    text-decoration: underline;
+.light-mode {
+    color: rgb(32, 32, 32);
+    background-color: rgb(240, 248, 255);
 }
 
 /* Dark Mode Styling */
@@ -100,10 +83,6 @@ hr {
 .dark-mode {
     color: rgb(240, 248, 255);
     background-color: rgb(32, 32, 32);
-}
-
-.dark-mode a:hover {
-    color: lightgreen;
 }
 
 .dark-mode .dark-mode-button {
@@ -121,14 +100,10 @@ hr {
     vertical-align: middle;
     -webkit-filter: none;
     filter: none;
-    transition: .2s;
 }
 
 .dark-mode-button:hover {
     cursor: pointer;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
 }
 
 #ascii-pc {
