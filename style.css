@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
+    background-color: black;
 }
 
 h1 {
@@ -40,12 +41,14 @@ hr {
 #outer-container {
     display: flex;
     justify-content: center;
+    min-height: 100vh;
 }
 
 #inner-container {
-    padding-bottom: 20pt;
+    padding: 10pt;
     width: 600pt;
     max-width: 90%;
+    border-radius: 12pt;
 }
 
 #content-section {
@@ -74,20 +77,33 @@ hr {
 /* Light Mode Styling */
 
 .light-mode {
-    color: rgb(32, 32, 32);
-    background-color: rgb(240, 248, 255);
+    color: #181818;
+    background-color: #f0f0f0;
+}
+
+.light-mode .dark-mode-button {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.light-mode hr {
+    border-color: #181818;
 }
 
 /* Dark Mode Styling */
 
 .dark-mode {
-    color: rgb(240, 248, 255);
-    background-color: rgb(32, 32, 32);
+    color: #f0f0f0;
+    background-color: #181818;
 }
 
 .dark-mode .dark-mode-button {
     -webkit-filter:invert(1);
     filter:invert(1);
+}
+
+.dark-mode hr {
+    border-color: #f0f0f0;
 }
 
 /* Toggle Dark Mode Button */
@@ -98,8 +114,6 @@ hr {
     background-color: inherit;
     color: inherit;
     vertical-align: middle;
-    -webkit-filter: none;
-    filter: none;
 }
 
 .dark-mode-button:hover {
