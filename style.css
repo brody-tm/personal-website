@@ -41,14 +41,12 @@ hr {
 #outer-container {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
 }
 
 #inner-container {
     padding: 10pt;
     width: 600pt;
     max-width: 90%;
-    border-radius: 12pt;
 }
 
 #content-section {
@@ -57,7 +55,7 @@ hr {
 
 #left-section {
     width: 70%;
-    margin-right: 15pt;
+    margin-right: 10pt;
 }
 
 #right-section {
@@ -140,7 +138,7 @@ hr {
     #left-section {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 3pt;
+        margin-bottom: 10pt;
     }
     
     #right-section {
