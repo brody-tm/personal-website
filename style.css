@@ -49,13 +49,9 @@ hr {
     max-width: 90%;
 }
 
-#content-section {
-    display: flex;
-}
-
 #left-section {
-    width: 70%;
-    margin-right: 10pt;
+    width: 100%;
+    /* margin-right: 10pt; */
 }
 
 #right-section {
